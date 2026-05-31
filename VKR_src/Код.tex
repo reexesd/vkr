@@ -1,0 +1,28 @@
+\appendix{Фрагменты исходного кода программы}
+
+\newcommand{\codefrag}[2]{\par\smallskip #1\par\noindent #2\nopagebreak\par\nopagebreak}
+
+\codefrag{Проверка сложности пароля при регистрации.}{password.py}
+\lstinputlisting[language=Python, firstline=14, lastline=33, firstnumber=14]{../project/backend/api/validators/password.py}
+
+\codefrag{Поиск в ширину для обнаружения циклов в графе зависимостей задач перед сохранением новой связи.}{dependency.py}
+\lstinputlisting[language=Python, firstline=61, lastline=93, firstnumber=61]{../project/backend/api/validators/dependency.py}
+
+\codefrag{Проверка согласованности дат пары задач с выбранным типом связи.}{dependency.py}
+\lstinputlisting[language=Python, firstline=15, lastline=45, firstnumber=15]{../project/backend/api/validators/dependency.py}
+
+\codefrag{Определение роли пользователя в проекте и производные проверки прав доступа.}{permissions.py}
+\lstinputlisting[language=Python, firstline=9, lastline=41, firstnumber=9]{../project/backend/api/permissions.py}
+
+\codefrag{Создание проекта с автоматическим добавлением автора в участники с ролью владельца в одной транзакции.}{project.py}
+\lstinputlisting[language=Python, firstline=26, lastline=33, firstnumber=26]{../project/backend/api/views/project.py}
+
+\codefrag{Определение типа связи по выбранным торцам полос задач на диаграмме Ганта.}{dependencyHelpers.js}
+\lstinputlisting[language=JavaScript, firstline=285, lastline=303, firstnumber=285]{../project/frontend/src/api/dependencyHelpers.js}
+
+\codefrag{Применение цветовой палитры к интерфейсу через CSS-переменные корневого элемента документа.}{ThemeContext.jsx}
+\lstinputlisting[language=JavaScript, firstline=305, lastline=318, firstnumber=305]{../project/frontend/src/contexts/ThemeContext.jsx}
+
+\codefrag{Построение маршрута стрелки зависимости между двумя полосами задач на диаграмме Ганта: при пересечении предпочтительного пути с другими полосами выбирается обходной маршрут.}{GanttChart.jsx}
+\lstinputlisting[language=JavaScript, firstline=775, lastline=799, firstnumber=775]{../project/frontend/src/components/GanttChart/GanttChart.jsx}
+
